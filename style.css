@@ -1,0 +1,91 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Element styles */
+h1 {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	text-transform: uppercase;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+	margin: 10px;
+}
+
+body {
+	font-family: Helvetica;
+	background-color: grey;
+}
+
+p {
+	font-size: 16px;
+}
+
+ul {
+	font-size: 16px;
+}
+
+ol {
+	font-size: 16px;
+	counter-reset: list;
+}
+ol > li {
+	list-style: none;
+}
+ol > li:before {
+	content: counter(list) ") ";
+	counter-increment: list;
+}
+
+/* Class styles */
+.lesson {
+	background-color: pink;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.concept {
+	background-color: white;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 8px;
+}
+
+.concept-title {
+	font-size: 20px;
+	margin: 8px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.concept-contents {
+	font-weight: lighter;
+	margin: 6px;
+}
+
+/* Span styles */
+
+.italic	{
+	font-style: italic;
+	font-weight: bold;
+	background-color: #ffff00;
+}
+
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+
+.green {
+	color: green;
+}

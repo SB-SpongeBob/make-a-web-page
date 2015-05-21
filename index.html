@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html >
+	<head>
+  	<meta charset="UTF-8">
+    <title>Joy's Notes</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Intro to Programming</h1>
+		<!-- Start of Lesson 1 -->
+		<div class="lesson">
+			<h2>Lesson 1: The Basics of the Web and HTML</h2>
+			<div class="concept">
+				<div class="concept-title">
+					1. WWW
+				</div>
+	  		<div class="concept-contents">
+					<p>
+						World Wide Web (WWW) is Collection of HTML(HyperText Markup language) documents. While almost all types of files can exist on the web, any type of file can be linked to HTML documents that are the basis for everything on the web.
+					</p>
+	  		</div>
+	  	</div>	
+			<div class="concept">
+	  		<div class="concept-title">
+					2. Major Pieces
+				</div>
+				<div class="concept-contents">
+					<p>
+		   			Your computer is running a Web browser, the Internet, and servers. Your browser makes requests via the Internet to servers. These requests are using a protocol called http and the servers respond with files that your browser displays. Some examples of browsers are Internet Explorer, Chrome, Firefox.
+		   		</p>
+			  		<ul>
+							<li><b>HTTP</b> – the main protocol of the web
+							</li>
+							<li><b>Servers</b> – computers that host the files that make up the web</li>
+							<li><b>Internet</b> – the world’s largest computer network</li>
+							<li><b>Browser</b> – a program that runs on your computer to display files found on the web</li>
+			  		</ul>
+	  		</div>
+	  	</div>
+	  	<div class="concept">
+	  		<div class="concept-title">
+	  			3. HTML(HyperText Markup Language) is made up of:
+	  		</div>
+				<div class="concept-contents">
+					<ul>
+						<li><b>Text content</b> (What you see)</li>
+						<li><b>Markup</b> (what it looks like) </li>
+						<li><b>References</b> to other documents, e.g. images, videos</li>
+						<li><b>Links</b> to others</li>
+					</ul>
+	  		</div>
+	  	</div>
+	  	<div class="concept">
+	  		<div class="concept-title">
+					4. Intro to HTML Tags
+				</div>
+				<div class="concept-contents">
+					<p><img src="img/markup.png" alt = "markup"></p>
+					<ul>
+						<li>Tags, once opened, need to be closed!</li>
+						<li>HTML Attributes &lt;<span class="red">Tag</span> <span class="blue">Attr</span>="<span class="green">value</span>">contents&lt;/tag>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="concept">
+	  		<div class="concept-title">
+					5. Types of HTML tags
+				</div>
+				<div class="concept-contents">
+					<ul>
+						<li>Bold tag - &lt;b> &lt;/b> </li>
+						<li><em>Italics</em> tag - &lt;em> &lt;/em> </li>
+						<li>Anchor tag &lt;a> - makes a link, &lt;a href=”www.reddit.com” sung &lt;/a> 
+						<li>Image tag - &lt;<span class="red">img</span> <span class="blue">src</span>="<span class="green">URL</span>" alt="text"><br> Image tag is a void tag as there is no contents and therefore do not require a closing tag.<br> Src = source alt = alternative name </li>
+						<li>Break tag - &lt;br> <br> Break tag is a void tag and do not need a closing tag. Can be used multiple times to give multiple line breaks. It ends the line and it is a lineline element (stays within the line), although it creates multiple lines as it just creates 	white space within the line pushing the rest to the next line.</li>  
+						<li>Paragraph tag - &lt;p> contents &lt;/p> <br> It makes the invisible box (block element) around the contents. </li>
+						<li>"\n" that Steve writes is how programmers represent a "newline" character in common coding languages such as C, Java, Python, etc.</li>
+						<li>Span/Div - They are same but Span inline element Div is a block element.Their only function is to contain contents.<br>
+						- The <span class="italic">&lt;span></span> tag is used to group inline-elements in a document.<br>
+						- The <span class="italic">&lt;span></span> tag provides no visual change by itself.<br>
+						- The <span class="italic">&lt;span></span> tag provides a way to add a hook to a part of a text or a part of a document.</li>
+					</ul>
+					<p><img src="img/Span-Div.png" alt="Span and Div"></p>
+	  		</div>
+	  	</div>
+	  	<div class="concept">
+	  		<div class="concept-title">
+					6. Document structure
+				</div>
+				<div class="concept-contents">
+					<p><img src="img/Document-Structure.png" alt="Document Structure"></p>
+	  		</div>
+	  	</div>
+	 	</div>
+	 	<!-- Start of Lesson 2 -->
+	 	<div class="lesson">
+			<h2>Lesson 2: Creating a Structured Document with HTML   </h2>
+	  	<div class="concept">
+	  		<div class="concept-title">
+					1. Developer Tools
+				</div>
+				<div class="concept-contents">
+						<p>Google Chrome&#8594;More tools&#8594;Developer tools</p>
+	 			</div>
+	 		</div>
+	 		<div class="concept">
+	  		<div class="concept-title">
+					2. HTML, CSS and DOM
+				</div>
+				<div class="concept-contents">
+					<ul>
+						<li>HTML - HyperText Markup Language - the standard markup language used to create web pages. (Structure of the web pages)</li>
+						<li>CSS - Cascading Style Sheets - style sheet language used for describing the look and formatting of a document written in a markup language. (Styles of the web pages)</li>
+						<li>DOM - Document Object Model - a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages). The nodes of every document are organized in a tree structure, called the DOM tree.</li>
+					</ul>
+	  		</div>
+	  	</div>
+	  	<div class="concept">
+	  		<div class="concept-title">
+	    		3. How to build the webpage on a high level
+	    	</div>
+	    	<div class="concept-contents">
+		 			<ol>
+						<li>First boxify all elements of the webpage you want to create on a piece of paper.</li>
+						<li>Divide boxes using &lt;div> &lt;/div> tag.
+						</li>
+						<li>Give name to each div through class (so we can identify which box refers to what and style through css)</li>
+					</ol>
+	  		</div>
+	  	</div>
+	 	</div>
+	<!-- Start of Lesson 3 -->
+		<div class="lesson">
+			<h2>Lesson 3: Adding CSS Style and HTML Structure</h2>
+			<div class="concept">
+	  		<div class="concept-title">
+					1. CSS (Cascading Style Sheets)
+				</div>
+				<div class="concept-contents">
+					<p>
+						1) CSS is code written to control the "style" of HTML elements 
+					</p>
+						<ul>
+							<li>Sheets - You can have several CSS files or Sheets that will be referenced in HTML and all of them will be used to find out the final and visible style for your page</li>
+							<li>Cascading – It means the most specific rule applies </li>
+						</ul>
+						<p>
+							2) Search and Replace (avoid repetition) - You can also think about CSS as a search and replace tool: you identify a class or a tag of the element you want to find (or match, in CSS terminology), and then what you want to do with it, or what property values to replace with different ones.
+						</p>
+						<p>
+							3) Order Matters - It also matters where you define the rules and in what order they are applied. Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:
+						</p>
+						<ul>
+							<li>the default style of a browser (different browsers have slightly different styles)</li>
+							<li>stylesheet in a separate file (this is what I will be mostly using)</li>
+							<li>stylesheet inside HTML (this can be done for small projects but is not ideal)</li>
+							<li>inline style in an element (this can also be done but should be avoided)</li>
+						</ul>
+						<p>
+							4) Specifics Matter - "Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.
+						</p>
+						<p>
+							5) How does CSS "control" HTML - By selecting by tag or class
+						</p>
+						<p>
+							6) How do I include CSS Styling in my web page?
+						</p>
+						<ul>
+							<li> Write CSS in the &lt;head> of your HTML</li>
+							<li> Link your HTML to a separate CSS file</li>
+							<li> Write your style inline with your HTML</li>
+						</ul>
+				</div>
+			</div>
+			<div class="concept">
+	  		<div class="concept-title">
+					2. The Box Model
+				</div>
+				<div class="concept-contents">
+					<p>
+						<img src="img/box-model.png" alt="Box Model">
+					</p>
+					<ul>
+						<li>Content - The content of the box, where text and images appear</li>
+						<li>Padding - Clears an area around the content. The padding is transparent</li>
+						<li>Border - A border that goes around the padding and content</li>
+						<li>Margin - Clears an area outside the border. The margin is transparent</li>
+					</ul>
+				</div>
+			</div>
+			<div class="concept">
+	  		<div class="concept-title">
+					3. CSS Box sizing property: Box-sizing: border box
+				</div>
+				<div class="concept-contents">
+					<p>
+						By default, the width and height of an element is calculated like this:<br>
+						width + padding + border = actual width of an element<br>
+            height + padding + border = actual height of an element<br>
+						This means: When you set the width/height of an element, the element often appear bigger than you have set (because the element's border and padding are added to the element's specified width/height).
+						The box-sizing property solves this problem. It allows to include the padding and border in an element's total width and height. No matter how I tweak padding and box size, the box size that I see stays the same – remember the margin is not included.  In order to display in all browsers, add browser specific prefixes.
+					</p>
+						<div>
+						<img src="img/box-sizing.png" alt="Box sizing property">
+						</div>
+				</div>
+			</div>
+			<div class="concept">
+	  		<div class="concept-title">
+					4. Adding Display:flex in CSS – positioning of boxes
+				</div>
+				<div class="concept-contents">
+					<p> Please refer to <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">this link</a>  for further explanation.<br>
+						.app {<br>
+   						 display: -webkit-flex;<br>
+   						 display: flex;<br>
+						}
+					</p>
+				</div>
+			</div>
+			<div class="concept">
+	  		<div class="concept-title">
+					5. Adding images
+				</div>
+				<div class="concept-contents">
+					<p>
+						Make a folder called images inside the project folder and put the image there. Make sure the image name does not contain any spaces or accented character. Add “alt” to describe the image in case the webpage can’t display the image.<br>
+						&lt;img src="img/app.png" alt="This is a screenshot">
+					</p>
+				</div>
+			</div>
+			<div class="concept">
+	  		<div class="concept-title">
+					6. Code&#8594;Test&#8594;Refine
+				</div>
+				<div class="concept-contents">
+					<ol>
+						<li>Look for natural boxes</li>
+						<li>Look for repeated styles and semantic elements</li>
+						<li>Write your HTML</li>
+						<li>Apply styles (From biggest to smallest)</li>
+						<li>Fix things</li>
+						<li>Repeat 3) to 5) until perfect!</li>
+					</ol>
+				</div>
+			</div>
+			<div class="concept">
+	  		<div class="concept-title">
+					7. Validate your codes
+				</div>
+				<div class="concept-contents">
+					<p>To verify HTML: <a href="http://validator.w3.org/#validate-by-input">http://validator.w3.org/#validate-by-input</a></p>
+					<p>To verify CSS: <a href="http://jigsaw.w3.org/css-validator/#validate_by_input"> http://jigsaw.w3.org/css-validator/#validate_by_input</a></p>
+				</div>
+			</div>
+			<div class="concept">
+	  		<div class="concept-title">
+					8. Additional notes - Comments: Use it sparingly!
+				</div>
+				<div class="concept-contents">
+					<p>
+						Comments are lines of text that the computer ignores. They are just there so that programmers can leave notes for other people (or themselves) to read.
+					</p>
+					<ul>
+						<li>In HTML, code comments begin with &lt;!-- and end with -->. Everything in between is ignored.</li>
+						<li>In CSS, code comments begin with /* and end with */.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+</body>
+</Html>
